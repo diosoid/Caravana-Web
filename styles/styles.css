@@ -1,0 +1,355 @@
+/*Config basica comun a todos los html*/
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-image: url('../Imagenes/fondo-estrellado-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed ;
+   
+}
+
+@font-face {
+    font-family: 'robot-tipo';
+    src: url('../Font/Classic\ Robot\ Condensed.otf') ;
+}
+
+a {
+    font-family: 'robot-tipo';
+    font-size: xx-large;
+    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+
+h1 {
+    font-family: 'robot-tipo';
+    font-size: xx-large;    
+    list-style: none;
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+}
+
+p {
+    font-family: 'robot-tipo';
+    font-size: x-large;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: none;
+    justify-content: space-around;
+    align-items: center;  
+    
+}
+
+
+
+main {
+    margin: 50;
+    padding: 50;
+}
+
+/* Contenido header */
+ul {
+    display: flex;
+    flex-direction: none;
+    justify-content: space-around;
+    align-items: center;    
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+a {
+    transition: all 1s;
+}
+
+a:hover {
+    font-size: 300%;
+    text-decoration: underline  ;
+    
+}
+
+
+header {
+    background-color: black;
+    margin: 14px;
+    border: 2px solid whitesmoke;
+    padding: 0px;
+    
+}
+/* Contenido header */
+
+footer {
+    background-color: black;
+    margin: 14px;
+    border: 2px solid whitesmoke;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Animaciones del footer */
+
+.icon-size {
+    transition: all 1s;
+}
+
+.icon-size:hover {
+    transform: scale(1.3);
+}
+
+
+/*Config basica comun a todos los html*/
+
+
+.intro {
+    padding: 50px;
+}
+
+
+.icon-size {
+    width: 100px;
+    height: 100px;
+
+}
+
+.logo-size {
+    width: 200px;
+    height: 200px;
+}
+
+/* Pagina de inicio*/
+.bloque-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bloque-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bloque-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.contenedor-imagenes {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Animaciones inicio*/
+
+/* .cuerpo-lunas {
+    transition: all 5s;
+}
+
+.cuerpo-lunas:hover {
+    transform: rotate(360deg);
+} */
+
+.lunas-img {
+    display: inline-flex;
+    transition: all 2s;
+    animation-iteration-count: infinite;
+}
+
+.lunas-img:hover {
+    transform: scale(1.5);
+}
+
+/*Fin pagina inicio*/
+
+/* Seccion Nosotros*/
+.nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.integrantes {
+    margin: 20px;
+    width: 60%;
+    
+}
+
+.desc {    
+    margin: 0px;
+    text-align: justify;
+    display: flex;
+}
+
+.ellos {
+    margin: 10px;
+}
+
+/*Fin Seccion Nosotros*/
+
+/*Arreglos Seccion Videos */
+
+.videos-cara {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*Arreglos Seccion Videos */
+
+
+
+
+/* Seccion contacto en construccion*/
+.contacto {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+/* Seccion contacto en construccion*/
+
+/* Elementos de grid seccion Historia y videos*/
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin: 20px;
+    align-items: center;
+    align-self: left;
+    text-align: center;
+    
+    
+}
+
+.fotos-histo {
+    
+    width: 100%;
+}
+
+.item-text {
+    
+    font-size: 240%;
+    text-align: left;
+    position: relative;
+    
+}
+
+
+/* Media Querys */
+
+@media screen and (max-width: 480px) {
+    ul {        
+        flex-direction: column;        
+    }   
+    footer {
+        flex-direction: column;        
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .bloque-1, .bloque-2, .bloque-3 {
+        flex-direction: column;
+    }
+
+    .fotos-histo {
+        width: 100%;
+    }
+
+    
+    .desc {    
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .integrantes {
+        width: 100%;
+    }
+
+    .img-contacto {
+        width: 100%;
+    }
+
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width: 980px) {
+    ul {
+       
+        flex-direction: column;        
+    }
+    footer {
+        flex-direction: column;        
+    }
+
+    
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .lunas-inicio {
+        width: 100%;
+    }
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bloque-1, .bloque-2, .bloque-3 {
+        flex-direction: column;
+    }
+    .fotos-histo {
+        width: 100%;
+    }
+
+    .nosotros {              
+        flex-direction: column;        
+    }
+    .img-contacto {
+        width: 100%;
+    }
+
+}
+
+
+
+@media screen and (min-width: 981px) {
+    
+    
+    
+}
