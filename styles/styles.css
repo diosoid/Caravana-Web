@@ -298,11 +298,21 @@ img {
         flex-direction: column;
         width: 100%;
     }
+
     .nosotros {
+
+        flex-direction: column;
+
+        margin-left: 10px;
+
+        margin-right: 10px;
+
+    }
+    /* .nosotros {
         display: flex;
         flex-direction: column;
         width: 100%;
-    }
+    } */
     
     .bloque-1, .bloque-2, .bloque-3 {
         flex-direction: column;
@@ -310,7 +320,13 @@ img {
 
     .fotos-histo {
         width: 100%;
-        
+                
+    }
+
+    .grid-item {
+        margin-left: 10px;
+
+        margin-right: 10px;
     }
 
     
@@ -337,6 +353,12 @@ img {
         margin: 20px;
     }
 
+    .carousel-inner {
+        margin-left: 10px;
+
+        margin-right: 10px;
+    }
+
 }
 
 
@@ -361,11 +383,27 @@ img {
         width: 100%;
     }
 
+    .grid-item {
+        margin-left: 10px;
+
+        margin-right: 10px;
+    }
+
     .nosotros {
+
+        flex-direction: column;
+
+        margin-left: 10px;
+
+        margin-right: 10px;
+
+    }
+
+    /* .nosotros {
         display: flex;
         flex-direction: column;
         width: 100%;
-    }
+    } */
 
     .bloque-1, .bloque-2, .bloque-3 {
         flex-direction: column;
@@ -373,11 +411,10 @@ img {
     .fotos-histo {
         width: 100%;
         
+        
     }
 
-    .nosotros {              
-        flex-direction: column;        
-    }
+    
     .img-contacto {
         width: 100%;
     }
@@ -389,6 +426,12 @@ img {
 
     .ellos {
         margin: 20px;
+    }
+
+    .carousel-inner {
+        margin-left: 10px;
+
+        margin-right: 10px;
     }
 
 }
