@@ -1,27 +1,8 @@
-/*Config basica comun a todos los html*/
 @font-face {
   font-family: "robot-tipo";
   src: url("../Font/Classic Robot Condensed.otf");
 }
-/* Todo esto se desorganizo con la conversion de css a sass */
-/* Contenido header */
-/* Contenido header */
-/* Animaciones del footer */
 /*Config basica comun a todos los html*/
-/* Pagina de inicio*/
-/*Animaciones inicio*/
-/*Fin pagina inicio*/
-/* Seccion Nosotros*/
-/*Fin Seccion Nosotros*/
-/*Arreglos Seccion Videos */
-/*Fin Arreglos Seccion Videos */
-/* Ajustes Galeria */
-/*Ajustes bootstrap*/
-/* Fin ajustes bootstrap */
-/* Seccion contacto en construccion*/
-/* Seccion contacto en construccion*/
-/* Elementos de grid seccion Historia y videos*/
-/* Media Querys */
 * {
   margin: 0%;
   padding: 0%;
@@ -85,6 +66,7 @@ ul {
   width: 100%;
 }
 
+/* Contenido header */
 header {
   background-color: black;
   margin: 14px;
@@ -92,6 +74,7 @@ header {
   padding: 0px;
 }
 
+/* Contenido header */
 footer {
   background-color: black;
   margin: 14px;
@@ -109,6 +92,10 @@ footer {
 }
 .icon-size:hover {
   transform: scale(1.3);
+}
+
+img {
+  width: 100%;
 }
 
 .intro {
@@ -181,21 +168,21 @@ footer {
   display: flex;
 }
 
+/*Arreglos Seccion Videos */
 .videos-cara {
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 
-img {
-  width: 100%;
-}
-
+/*Fin Arreglos Seccion Videos */
+/*Ajustes bootstrap*/
 .mi-color {
   color: whitesmoke;
   text-decoration-color: whitesmoke;
 }
 
+/*Fin Ajustes bootstrap*/
 .contacto {
   display: flex;
   align-items: center;
@@ -224,6 +211,7 @@ img {
   position: relative;
 }
 
+/* Media Querys */
 @media screen and (max-width: 480px) {
   ul {
     flex-direction: column;
