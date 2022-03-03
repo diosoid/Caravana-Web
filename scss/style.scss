@@ -1,3 +1,7 @@
+@import 'header';
+@import 'footer';
+@import 'base/variables.scss';
+
 @font-face {
 	font-family: 'robot-tipo';
 	src: url('../Font/Classic\ Robot\ Condensed.otf');
@@ -17,7 +21,6 @@ body {
 a {
 	font-family: 'robot-tipo';
 	font-size: xx-large;
-	list-style-type: none;
 	list-style: none;
 	text-decoration: none;
 	color: whitesmoke;
@@ -32,7 +35,7 @@ h1 {
 	font-size: xx-large;
 	list-style: none;
 	text-decoration: none;
-	color: whitesmoke;
+	color: $typo-color;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -42,7 +45,7 @@ h1 {
 p {
 	font-family: 'robot-tipo';
 	font-size: x-large;
-	color: whitesmoke;
+	color: $typo-color;
 	display: flex;
 	flex-direction: none;
 	justify-content: space-around;
@@ -52,33 +55,8 @@ main {
 	margin: 50;
 	padding: 50;
 }
-ul {
-	display: flex;
-	flex-direction: none;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-	width: 100%;
-}
 
-/* Contenido header */
-header {
-	background-color: black;
-	margin: 14px;
-	border: 2px solid whitesmoke;
-	padding: 0px;
-}
-/* Contenido header */
 
-footer {
-	background-color: black;
-	margin: 14px;
-	border: 2px solid whitesmoke;
-	padding: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-}
 .icon-size {
 	transition: all 1s;
 	width: 100px;
@@ -89,7 +67,7 @@ footer {
 }
 
 img {
-	width: 100%;
+	width: $wd-size;
 }
 
 .intro {
@@ -165,8 +143,8 @@ img {
 
 /*Ajustes bootstrap*/
 .mi-color {
-	color: whitesmoke;
-	text-decoration-color: whitesmoke;
+	color: $typo-color;
+	text-decoration-color: $typo-color;
 }
 
 /*Fin Ajustes bootstrap*/
@@ -305,3 +283,6 @@ img {
 		margin-right: 10px;
 	}
 }
+
+
+/* hola */

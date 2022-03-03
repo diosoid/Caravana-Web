@@ -1,3 +1,29 @@
+/* Contenido header */
+header {
+  background-color: black;
+  margin: 14px;
+  border: 2px solid whitesmoke;
+}
+header ul {
+  display: flex;
+  flex-direction: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: width 100%;
+}
+
+/* Contenido header */
+footer {
+  background-color: black;
+  margin: 14px;
+  border: 2px solid whitesmoke;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 @font-face {
   font-family: "robot-tipo";
   src: url("../Font/Classic Robot Condensed.otf");
@@ -18,7 +44,6 @@ body {
 a {
   font-family: "robot-tipo";
   font-size: xx-large;
-  list-style-type: none;
   list-style: none;
   text-decoration: none;
   color: whitesmoke;
@@ -57,34 +82,6 @@ main {
   padding: 50;
 }
 
-ul {
-  display: flex;
-  flex-direction: none;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-/* Contenido header */
-header {
-  background-color: black;
-  margin: 14px;
-  border: 2px solid whitesmoke;
-  padding: 0px;
-}
-
-/* Contenido header */
-footer {
-  background-color: black;
-  margin: 14px;
-  border: 2px solid whitesmoke;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 .icon-size {
   transition: all 1s;
   width: 100px;
@@ -95,7 +92,7 @@ footer {
 }
 
 img {
-  width: 100%;
+  width: width 100%;
 }
 
 .intro {
@@ -346,5 +343,6 @@ img {
     margin-right: 10px;
   }
 }
+/* hola */
 
 /*# sourceMappingURL=styles.css.map */

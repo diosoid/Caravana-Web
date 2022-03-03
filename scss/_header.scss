@@ -1,0 +1,28 @@
+@import 'base/variables.scss';
+
+/* Contenido header */
+header {
+	background-color: $bg-color;
+	margin: 14px;
+	border: 2px solid whitesmoke;
+
+    ul {
+        display: flex;
+        flex-direction: none;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: $wd-size;
+    }
+	
+}
+/* Contenido header */
+
+// ul {
+// 	display: flex;
+// 	flex-direction: none;
+// 	justify-content: space-around;
+// 	align-items: center;
+// 	flex-wrap: wrap;
+// 	width: $wd-size;
+// }
