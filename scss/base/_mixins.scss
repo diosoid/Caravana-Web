@@ -1,0 +1,8 @@
+@mixin direction($direction) {
+    flex-direction: $direction ;
+}
+
+@mixin color($color) {
+    color: $color;
+    
+}

@@ -1,6 +1,9 @@
 @import 'header';
 @import 'footer';
 @import 'base/variables.scss';
+@import 'base/extends';
+@import 'base/operadores';
+@import 'base/mixins';
 
 @font-face {
 	font-family: 'robot-tipo';
@@ -23,33 +26,36 @@ a {
 	font-size: xx-large;
 	list-style: none;
 	text-decoration: none;
-	color: whitesmoke;
+	@include color(whitesmoke);
 	transition: all 1s;
 	&:hover {
 		font-size: 300%;
 		text-decoration: underline;
 	}
 }
+
+.clase-de-prueba {
+	@include direction(column);
+}
+
 h1 {
 	font-family: 'robot-tipo';
 	font-size: xx-large;
 	list-style: none;
 	text-decoration: none;
-	color: $typo-color;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
+	color: $typo-color;	
 	margin: 50px;
+	@extend %mensaje;
+	@include direction(column);
 }
 p {
 	font-family: 'robot-tipo';
 	font-size: x-large;
-	color: $typo-color;
-	display: flex;
-	flex-direction: none;
+	color: $typo-color;		
 	justify-content: space-around;
-	align-items: center;
+	@extend %centrado;
+	@include direction(none);
+	
 }
 main {
 	margin: 50;
@@ -78,29 +84,22 @@ img {
 	height: 200px;
 }
 .bloque-1 {
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: space-around;
+	@extend %bloques;
+	
 }
 .bloque-2 {
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: space-around;
+	@extend %bloques;
 }
 .bloque-3 {
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: space-around;
+	@extend %bloques;
+	
 	margin-bottom: 100px;
 }
 .contenedor-imagenes {
 	display: flex;
-	align-items: flex-start;
-	flex-direction: column;
+	align-items: flex-start;	
 	justify-content: center;
+	@include direction(column);
 }
 .lunas-img {
 	width: 500px;
@@ -112,9 +111,7 @@ img {
 	}
 }
 .nosotros {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@extend %mensaje;
 }
 .ellos {
 	margin: 20px;
@@ -134,8 +131,8 @@ img {
 
 .videos-cara {
 	width: 100%;
-	align-items: center;
-	justify-content: center;
+	@extend %mensaje;
+	
 }
 /*Fin Arreglos Seccion Videos */
 
@@ -150,8 +147,7 @@ img {
 /*Fin Ajustes bootstrap*/
 
 .contacto {
-	display: flex;
-	align-items: center;
+	@extend %centrado;
 	flex-direction: row;
 	justify-content: space-evenly;
 	margin: 50px;

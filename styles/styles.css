@@ -24,6 +24,24 @@ footer {
   justify-content: space-evenly;
 }
 
+.videos-cara, .nosotros, h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloque-3, .bloque-2, .bloque-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contacto, p {
+  display: flex;
+  align-items: center;
+}
+
 @font-face {
   font-family: "robot-tipo";
   src: url("../Font/Classic Robot Condensed.otf");
@@ -54,27 +72,26 @@ a:hover {
   text-decoration: underline;
 }
 
+.clase-de-prueba {
+  flex-direction: column;
+}
+
 h1 {
   font-family: "robot-tipo";
   font-size: xx-large;
   list-style: none;
   text-decoration: none;
   color: whitesmoke;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
   margin: 50px;
+  flex-direction: column;
 }
 
 p {
   font-family: "robot-tipo";
   font-size: x-large;
   color: whitesmoke;
-  display: flex;
-  flex-direction: none;
   justify-content: space-around;
-  align-items: center;
+  flex-direction: none;
 }
 
 main {
@@ -104,33 +121,15 @@ img {
   height: 200px;
 }
 
-.bloque-1 {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.bloque-2 {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 .bloque-3 {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
   margin-bottom: 100px;
 }
 
 .contenedor-imagenes {
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
 }
 
 .lunas-img {
@@ -141,12 +140,6 @@ img {
 }
 .lunas-img:hover {
   transform: scale(1.3);
-}
-
-.nosotros {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .ellos {
@@ -168,8 +161,6 @@ img {
 /*Arreglos Seccion Videos */
 .videos-cara {
   width: 100%;
-  align-items: center;
-  justify-content: center;
 }
 
 /*Fin Arreglos Seccion Videos */
@@ -181,8 +172,6 @@ img {
 
 /*Fin Ajustes bootstrap*/
 .contacto {
-  display: flex;
-  align-items: center;
   flex-direction: row;
   justify-content: space-evenly;
   margin: 50px;

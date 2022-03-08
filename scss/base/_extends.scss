@@ -1,0 +1,17 @@
+%mensaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%bloques {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+%centrado {
+    display: flex;    
+    align-items: center;
+}
