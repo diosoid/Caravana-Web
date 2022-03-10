@@ -65,15 +65,12 @@ a {
   list-style: none;
   text-decoration: none;
   color: whitesmoke;
-  transition: all 1s;
 }
 a:hover {
+  transition: all 1s;
   font-size: 300%;
   text-decoration: underline;
-}
-
-.clase-de-prueba {
-  flex-direction: column;
+  color: whitesmoke;
 }
 
 h1 {
@@ -167,7 +164,6 @@ img {
 /*Ajustes bootstrap*/
 .mi-color {
   color: whitesmoke;
-  text-decoration-color: whitesmoke;
 }
 
 /*Fin Ajustes bootstrap*/

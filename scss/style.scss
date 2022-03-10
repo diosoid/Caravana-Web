@@ -27,16 +27,16 @@ a {
 	list-style: none;
 	text-decoration: none;
 	@include color(whitesmoke);
-	transition: all 1s;
+	
 	&:hover {
+		transition: all 1s;
 		font-size: 300%;
 		text-decoration: underline;
+		@include color(whitesmoke);
 	}
 }
 
-.clase-de-prueba {
-	@include direction(column);
-}
+
 
 h1 {
 	font-family: 'robot-tipo';
@@ -137,14 +137,14 @@ img {
 /*Fin Arreglos Seccion Videos */
 
 
-
 /*Ajustes bootstrap*/
 .mi-color {
 	color: $typo-color;
-	text-decoration-color: $typo-color;
+	
 }
 
 /*Fin Ajustes bootstrap*/
+
 
 .contacto {
 	@extend %centrado;
