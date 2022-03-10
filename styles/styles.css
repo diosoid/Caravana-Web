@@ -193,6 +193,10 @@ img {
   position: relative;
 }
 
+.disclaimer {
+  display: none;
+}
+
 /* Media Querys */
 @media screen and (max-width: 480px) {
   ul {
