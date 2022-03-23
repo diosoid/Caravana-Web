@@ -2,7 +2,7 @@
 @import 'footer';
 @import 'base/variables.scss';
 @import 'base/extends';
-@import 'base/operadores';
+
 @import 'base/mixins';
 
 @font-face {
@@ -22,12 +22,13 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 }
-a {
+.mi-color {
 	font-family: 'robot-tipo';
 	font-size: xx-large;
 	list-style: none;
 	text-decoration: none;
 	@include color(whitesmoke);
+	color: $typo-color;
 
 	&:hover {
 		transition: all 1s;
@@ -35,30 +36,33 @@ a {
 		text-decoration: underline;
 		@include color(whitesmoke);
 	}
+	
 }
-
 
 h1 {
 	font-family: 'robot-tipo';
-	font-size: xx-large;
+	font-size: 240%;
 	list-style: none;
 	text-decoration: none;
-	color: $typo-color;
-	// margin: 50px;
+	color: $typo-color;	
 	justify-content: center;
 	text-align: center;	
 	@extend %mensaje;
 	@include direction(column);
 }
+
+.item-text {	
+ 	text-align: center;		
+}
+
 p {	
 	 display: flex;	
 	 font-family: 'robot-tipo';
-	 font-size: xx-large;
+	 font-size: 160%;
 	 color: $typo-color;
 	 justify-content: center;
 	 @extend %centrado;
 	 @include direction(none);
-
 }
 
 .ellos {
@@ -74,17 +78,13 @@ p {
 	}
 }
 
-
-
-.intro {
-	margin: 40px;
-}
 .logo-size {
 	width: 200px;
 	height: 200px;
 }
 
 /* Imagenes Lunas */
+
 .bloque-1 {
 	@extend %bloques;
 }
@@ -113,41 +113,34 @@ p {
 }
 
 /*Fin Imagenes Lunas*/
+
+/* Seccion nosotros */
 .nosotros {
 	@extend %mensaje;
 	width: 100%;
+	
 	flex-direction: column;
 }
 
 .integrantes {
-	margin: 20px;	
-	width: 60%;
+	margin: 20px;		
 }
-.desc {
-	margin: 20px;
+
+.desc {	
 	text-align: center;
-	display: flex;
-	
+	display: flex;	
 }
+
+/* Fin Seccion nosotros */
 
 /*Arreglos Seccion Videos */
 
 .videos-cara {
 	width: 100%;
 	@extend %mensaje;
-
 }
+
 /*Fin Arreglos Seccion Videos */
-
-
-/*Ajustes bootstrap*/
-.mi-color {
-	color: $typo-color;
-
-}
-
-/*Fin Ajustes bootstrap*/
-
 
 .contacto {
 	@extend %centrado;
@@ -161,21 +154,16 @@ p {
 	grid-template-rows: repeat(3, 1fr);
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 40px;
-	align-items: center;
-	
+	align-items: center;	
 	text-align: center;
 	margin: 40px;
 }
+
 .fotos-histo {
 	width: 100%;
 }
-.item-text {
-	font-size: 240%;
-	text-align: center;
-	position: relative;
-	
-	
-}
+
+
 
 .texto-bienvenida {
 	margin-left: 200px;
@@ -202,11 +190,7 @@ p {
 		width: 100%;
 		margin: 0px;		
 	}
-	.nosotros {
-		flex-direction: column;
-		margin-left: 10px;
-		margin-right: 10px;
-	}
+	
 	.bloque-1 {
 		flex-direction: column;
 	}
@@ -218,11 +202,6 @@ p {
 	}
 	
 	
-	.desc {
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-	}
 	
 	.img-contacto {
 		width: 100%;
@@ -239,10 +218,23 @@ p {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
+
+	/* Seccion nosotros */
 	.integrantes {
-			
+		margin: 0px;	
 		width: 100%;
 	}
+	.nosotros {
+		flex-direction: column;
+		
+	}
+	.desc {
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	/* Seccion nosotros */
+	
 
 
 
@@ -267,11 +259,7 @@ p {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
-	.nosotros {
-		flex-direction: column;
-		margin-left: 10px;
-		margin-right: 10px;
-	}
+	
 	.bloque-1 {
 		flex-direction: column;
 	}
@@ -291,17 +279,55 @@ p {
 	}
 	.ellos {
 		margin: 20px;
+		
 	}
 	
 	.texto-bienvenida {
 		margin-left: 40px;
 		margin-right: 40px;
 	}
+
+	/* Seccion nosotros */
 	.integrantes {
-			
+		margin: 0px;	
 		width: 100%;
 	}
+
+	.desc {
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	.nosotros {
+		flex-direction: column;
+		
+	}
+	/* Fin seccion nosotros */
+	
+	
 }
+
+@media screen and (min-width: 981px) and (max-width: 1545px) {
+
+	.nosotros {
+		flex-direction: column;
+		
+	}
+
+	
+	.desc {
+		flex-direction: column;
+		align-items: center;
+		
+	}
+
+	.integrantes {
+		margin: 0px;	
+		width: 100%;
+	}
+
+}
+
 
 
 
