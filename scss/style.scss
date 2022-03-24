@@ -2,7 +2,6 @@
 @import 'footer';
 @import 'base/variables.scss';
 @import 'base/extends';
-
 @import 'base/mixins';
 
 @font-face {
@@ -116,19 +115,18 @@ p {
 
 /* Seccion nosotros */
 .nosotros {
-	@extend %mensaje;
-	width: 100%;
-	
+	@extend %mensaje;	
 	flex-direction: column;
 }
 
 .integrantes {
-	margin: 20px;		
+	margin: 40px;		
 }
 
 .desc {	
 	text-align: center;
 	display: flex;	
+	margin: 40px;
 }
 
 /* Fin Seccion nosotros */
@@ -141,13 +139,6 @@ p {
 }
 
 /*Fin Arreglos Seccion Videos */
-
-.contacto {
-	@extend %centrado;
-	flex-direction: row;
-	justify-content: space-evenly;
-	margin: 50px;
-}
 
 .grid-container {
 	display: grid;
@@ -164,11 +155,18 @@ p {
 }
 
 
-
 .texto-bienvenida {
 	margin-left: 200px;
 	margin-right: 200px;
 }
+
+/* Ajuste del carrousel */
+.margen-car {
+	margin-left: 14px;
+	margin-right: 14px;
+}
+/* Fin Ajuste del carrousel */
+
 
 
 
@@ -231,6 +229,7 @@ p {
 	.desc {
 		flex-direction: column;
 		align-items: center;
+		margin: 14px;
 		
 	}
 	/* Seccion nosotros */
@@ -296,6 +295,7 @@ p {
 	.desc {
 		flex-direction: column;
 		align-items: center;
+		margin: 14px;
 		
 	}
 	.nosotros {
@@ -318,6 +318,7 @@ p {
 	.desc {
 		flex-direction: column;
 		align-items: center;
+		margin: 14px;
 		
 	}
 

@@ -37,7 +37,7 @@ footer {
   justify-content: space-around;
 }
 
-.contacto, p {
+p {
   display: flex;
   align-items: center;
 }
@@ -141,17 +141,17 @@ p {
 /*Fin Imagenes Lunas*/
 /* Seccion nosotros */
 .nosotros {
-  width: 100%;
   flex-direction: column;
 }
 
 .integrantes {
-  margin: 20px;
+  margin: 40px;
 }
 
 .desc {
   text-align: center;
   display: flex;
+  margin: 40px;
 }
 
 /* Fin Seccion nosotros */
@@ -161,12 +161,6 @@ p {
 }
 
 /*Fin Arreglos Seccion Videos */
-.contacto {
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 50px;
-}
-
 .grid-container {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -186,6 +180,13 @@ p {
   margin-right: 200px;
 }
 
+/* Ajuste del carrousel */
+.margen-car {
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+/* Fin Ajuste del carrousel */
 .disclaimer {
   display: none;
 }
@@ -250,6 +251,7 @@ p {
   .desc {
     flex-direction: column;
     align-items: center;
+    margin: 14px;
   }
 
   /* Seccion nosotros */
@@ -318,6 +320,7 @@ p {
   .desc {
     flex-direction: column;
     align-items: center;
+    margin: 14px;
   }
 
   .nosotros {
@@ -334,6 +337,7 @@ p {
   .desc {
     flex-direction: column;
     align-items: center;
+    margin: 14px;
   }
 
   .integrantes {
