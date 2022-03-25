@@ -76,7 +76,7 @@ body {
 
 h1 {
   font-family: "robot-tipo";
-  font-size: 240%;
+  font-size: 320%;
   list-style: none;
   text-decoration: none;
   color: whitesmoke;
@@ -85,14 +85,10 @@ h1 {
   flex-direction: column;
 }
 
-.item-text {
-  text-align: center;
-}
-
 p {
   display: flex;
   font-family: "robot-tipo";
-  font-size: 160%;
+  font-size: 240%;
   color: whitesmoke;
   justify-content: center;
   flex-direction: none;
@@ -110,6 +106,15 @@ p {
 .logo-size {
   width: 200px;
   height: 200px;
+}
+
+.texto-bienvenida {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.item-text {
+  text-align: center;
 }
 
 /* Fin Arreglos comunes */
@@ -197,6 +202,14 @@ p {
 /* Fin Disclaimer */
 /* Media Querys */
 @media screen and (max-width: 480px) {
+  h1 {
+    font-size: 240%;
+  }
+
+  p {
+    font-size: 160%;
+  }
+
   ul {
     flex-direction: column;
   }
@@ -257,6 +270,14 @@ p {
   /* Seccion nosotros */
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
+  h1 {
+    font-size: 240%;
+  }
+
+  p {
+    font-size: 160%;
+  }
+
   ul {
     flex-direction: column;
   }
@@ -326,6 +347,14 @@ p {
   /* Fin seccion nosotros */
 }
 @media screen and (min-width: 981px) and (max-width: 1545px) {
+  h1 {
+    font-size: 240%;
+  }
+
+  p {
+    font-size: 160%;
+  }
+
   .nosotros {
     flex-direction: column;
   }

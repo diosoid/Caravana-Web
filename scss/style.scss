@@ -40,7 +40,7 @@ body {
 
 h1 {
 	font-family: 'robot-tipo';
-	font-size: 240%;
+	font-size: 320%;
 	list-style: none;
 	text-decoration: none;
 	color: $typo-color;	
@@ -50,14 +50,11 @@ h1 {
 	@include direction(column);
 }
 
-.item-text {	
- 	text-align: center;		
-}
 
 p {	
 	 display: flex;	
 	 font-family: 'robot-tipo';
-	 font-size: 160%;
+	 font-size: 240%;
 	 color: $typo-color;
 	 justify-content: center;
 	 @extend %centrado;
@@ -80,6 +77,16 @@ p {
 	height: 200px;
 }
 
+.texto-bienvenida {
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.item-text {	
+	text-align: center;	
+		
+}
+
 /* Fin Arreglos comunes */
 
 /* Imagenes Lunas e Inicio */
@@ -93,6 +100,7 @@ p {
 }
 .bloque-2 {
 	@extend %bloques;
+	
 }
 .bloque-3 {
 	@extend %bloques;
@@ -180,7 +188,18 @@ p {
 /* Fin Disclaimer */
 
 /* Media Querys */
+
 @media screen and (max-width: 480px) {
+
+	h1 {
+		font-size: 240%;
+	}
+	p {
+		font-size: 160%;
+	}
+
+
+
 	ul {
 		flex-direction: column;
 	}
@@ -239,6 +258,14 @@ p {
 
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
+
+	h1 {
+		font-size: 240%;
+	}
+	p {
+		font-size: 160%;
+	}
+
 	ul {
 		flex-direction: column;
 	}
@@ -306,11 +333,17 @@ p {
 
 @media screen and (min-width: 981px) and (max-width: 1545px) {
 
+	h1 {
+		font-size: 240%;
+	}
+	p {
+		font-size: 160%;
+	}
+
 	.nosotros {
 		flex-direction: column;
 		
 	}
-
 	
 	.desc {
 		flex-direction: column;
